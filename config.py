@@ -325,8 +325,8 @@ def init_param(opt):
 
     # Assertion
     assert k_label >= 2, 'Error: k_label = {}, which should be >=2!'.format(k_label)
-    assert eval_b_num >= n_parent * ADV_d_step, 'Error: eval_b_num = {}, which should be >= n_parent * ADV_d_step ({})!'.format(
-        eval_b_num, n_parent * ADV_d_step)
+    assert eval_b_num >= n_parent * ADV_d_step, 'Error: eval_b_num = {}, which should be >= n_parent * ' \
+                                                'ADV_d_step ({})!'.format(eval_b_num, n_parent * ADV_d_step)
 
     # Create Directory
     dir_list = ['save', 'savefig', 'log', 'pretrain', 'dataset',
